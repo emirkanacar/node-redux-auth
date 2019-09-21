@@ -91,7 +91,7 @@ export function verifyEmail(props) {
  * Sign out
  */
 export function signoutUser() {
-  localStorage.clear();
+  localStorage.removeItem('auth');
 
   return {
     type: UNAUTH_USER,
